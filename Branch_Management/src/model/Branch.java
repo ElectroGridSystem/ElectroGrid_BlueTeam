@@ -102,7 +102,7 @@ public class Branch {
 				return "Error while connecting to the database for updating.";
 			}
 
-			// create a prepared statement
+			// create a Prepared statement
 			String query = "UPDATE branch1 SET BranchName=?,Category=?,Location=?,PowerCapacity=?,HeadEngineer=?" + "WHERE BranchID=?";
 
 			PreparedStatement preparedStmt = con.prepareStatement(query);
